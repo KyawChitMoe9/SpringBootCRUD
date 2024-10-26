@@ -1,0 +1,16 @@
+#spring.application.name=SpringBoot-CRUD
+server:
+  port: 8080
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: sammy
+    url: jdbc:mysql://localhost:3306/user_dB
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
